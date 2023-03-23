@@ -37,6 +37,7 @@ h1 {
   font-size: 24px;
   color: var(--white);
   margin: 40px 0px;
+  text-transform: uppercase;
 }
 
 main {
@@ -106,6 +107,7 @@ h3 {
   font-size: 60px;
   text-transform: capitalize;
   color: var(--gray-50);
+  text-transform: uppercase;
 }
 
 h4 {
@@ -126,9 +128,11 @@ h4 {
 }
 
 h5 {
+  padding: 0px 5px;
   font-weight: 700;
   font-size: 16px;
   color: var(--gray-50);
+  background: linear-gradient(to top, #ffdb7f 0%, #ffdb7f 65%, #ffffff 65%, #ffffff 100%);
 }
 
 span {
@@ -136,4 +140,17 @@ span {
   font-size: 10px;
   letter-spacing: 0.08em;
   color: var(--gray-30);
+  text-transform: uppercase;
+}
+
+.conteiner-detalhe {
+  position: relative;
+}
+
+.detalh {
+  position: absolute;
+  width: -webkit-fill-available;
+  height: 18px;
+  background-color: #ffdb7f;
+  bottom: 20px;
 }
