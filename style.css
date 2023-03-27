@@ -48,24 +48,61 @@ main {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 
   text-align: center;
-  background-image: url('./assets/bg.png');
-  background-repeat: no-repeat;
-  background-position: center;
+  /* background-image: url('./assets/bg.png'); */
+  background: #fff;
 }
 section {
   display: grid;
   grid-template-columns: 1fr 1.4fr 1fr;
   align-items: center;
-  margin: 70px 0px;
+  margin-bottom: 45px;
 }
 
-h2 {
-  margin-top: 45px;
+input[id='titulo'] {
+  width: 100%;
+  margin: 45px 0px;
   font-weight: 700;
   font-size: 36px;
+  text-align: center;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  background-color: transparent;
   color: var(--gray-50);
+}
+
+input[id='nome'] {
+  width: 100%;
+  margin: 10px 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  color: var(--gray-50);
+  text-transform: uppercase;
+}
+
+input[id='tutor'],
+input[id='data'] {
+  width: 100px;
+  padding: 0px 5px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--gray-50);
+  background: linear-gradient(to top, #ffdb7f 0%, #ffdb7f 65%, #ffffff 65%, #ffffff 100%);
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea[id='mensagem'] {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--gray-30);
+  line-height: 30px;
+  outline: none;
+  resize: none;
 }
 
 button {
@@ -102,20 +139,6 @@ section p {
   color: var(--gray-30);
 }
 
-h3 {
-  font-weight: 700;
-  font-size: 60px;
-  text-transform: capitalize;
-  color: var(--gray-50);
-  text-transform: uppercase;
-}
-
-h4 {
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--gray-30);
-  line-height: 30px;
-}
 .conteiner {
   padding: 0px 30px 30px;
 }
@@ -125,14 +148,6 @@ h4 {
   display: flex;
   justify-content: space-between;
   max-width: 450px;
-}
-
-h5 {
-  padding: 0px 5px;
-  font-weight: 700;
-  font-size: 16px;
-  color: var(--gray-50);
-  background: linear-gradient(to top, #ffdb7f 0%, #ffdb7f 65%, #ffffff 65%, #ffffff 100%);
 }
 
 span {
@@ -145,12 +160,4 @@ span {
 
 .conteiner-detalhe {
   position: relative;
-}
-
-.detalh {
-  position: absolute;
-  width: -webkit-fill-available;
-  height: 18px;
-  background-color: #ffdb7f;
-  bottom: 20px;
 }

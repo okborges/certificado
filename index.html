@@ -10,18 +10,24 @@
 
   <body>
     <header>
-      <h1>CERTIFICADO DE BRAVURA</h1>
+      <h1>CERTIFIQUE SEU AMOR</h1>
     </header>
 
     <main>
-      <h2>Certificado de bom garoto</h2>
+      <input type="text" id="titulo" placeholder="Digite um título" />
       <section>
         <img src="/assets/foto.png" alt="" />
 
         <div class="conteiner">
           <p>Certificamos que</p>
-          <h3>Scooby</h3>
-          <h4>foi super comportado durante a visita ao Xodó PetShop!</h4>
+          <input type="text" id="nome" maxlength="11" placeholder="Nome" />
+          <textarea
+            id="mensagem"
+            cols="30"
+            rows="3"
+            maxlength="90"
+            placeholder="Mensagem de Reconhecimento..."
+          ></textarea>
         </div>
 
         <img src="/assets/selo.png" alt="" class="selo" />
@@ -29,7 +35,7 @@
 
       <div class="assinatura">
         <div class="conteiner-detalhe">
-          <h5>Rafael Borges</h5>
+          <input type="text" id="tutor" placeholder="Nome do tutor" />
           <div class="detalhe"></div>
           <span>TUTOR</span>
         </div>
@@ -37,7 +43,7 @@
         <img src="/assets/rostinho.svg" alt="" />
 
         <div class="conteiner-detalhe">
-          <h5>20/03/2023</h5>
+          <input type="text" id="data" placeholder="Nome do tutor" />
           <div class="detalhe"></div>
           <span>DATA</span>
         </div>
@@ -49,5 +55,7 @@
     <footer>
       <p>© 2022 por Borges. Todos os direitos reservados</p>
     </footer>
+
+    <script src="/script.js"></script>
   </body>
 </html>
